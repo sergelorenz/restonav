@@ -1,0 +1,111 @@
+<!-- Api Key =  AIzaSyA21ElFzRWEGwWVcZJqDdwACQyjPD3Z0k8 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RestoNav</title>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- nav bar area -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar-main">
+        <a class="navbar-brand" href="/" id="navbar-anchor">
+            <img src="img/icon.png" id="navbar-icon">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <img src="img/navbar-collapse-icon.png" id="navbar-collapse-icon">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#navigation">Navigation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#features">Features</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Whole Body -->
+    <div class="container body-container">
+        <!-- Welcome Area -->
+        <div class="content-area welcome-area">
+            <div class="divider-area">
+                <img class="divider" src="img/divider.png">
+            </div>
+            <h1 class="header welcome-header">Welcome to RestoNav!</h1>
+            <div class="logo-container">
+                <img id="restonav-logo" src="img/logo.png">
+            </div>
+        </div>
+        <!-- Navigation Area -->
+        <div class="content-area navigation-area" id="navigation">
+            <div class="divider-area">
+                <img class="divider" src="img/divider.png">
+            </div>
+            <h1 class="header">Navigation</h1>
+            <div id="map-area">
+                <div id="map"></div>
+            </div>
+
+        </div>
+        <!-- About Area -->
+        <div class="content-area about-area" id="about">
+            <div class="divider-area">
+                <img class="divider" src="img/divider.png">
+            </div>
+            <h1 class="header">About RestoNav</h1>
+            <p class="about-paragraph">Experience the convenience of Restaurant-Hunting at the Comfort of your home. Without the hassle of the traffic! Nothing will ever be the same again.</p>
+            <p class="about-paragraph">This website was powered with pure Javascript and can run on virtually any Browser.</p>
+            <p class="about-paragraph">For more questions, kindly contact <span>0977-0652-050</span>.</p>
+        </div>
+        <!-- Features Area -->
+        <div class="content-area features-area" id="features">
+            <div class="divider-area">
+                <img class="divider" src="img/divider.png">
+            </div>
+            <h1 class="header">Features</h1>
+            <p class="features-paragraph"><span>Check these outstanding Features!</span></p>
+            <ul class="features-paragraph">
+                <li>Excellent restaurants all around Cebu and Mandaue Cities handpicked just for you!</li>
+                <li>Each restaurant has a food spcialty so you'll know when it hits your favorites list</li>
+                <li>You can filter which type of restaurants appear on the navigation area.</li>
+                <li>You can see how many customers have visited the restaurant. So you'll see which one is more popular!</li>
+                <li>Draw a rectangle by clicking on the <span>rectangle</span> panel and see how many restaurants are selected.</li>
+                <li>Get directions to your favorite restaurant by setting an origin point (right click) and clicking on "Get Directions" in the info window.</li>
+            </ul>
+            <p class="features-paragraph">Have a happy restaurant-hunting!</p>
+        </div>
+        <!-- Diclaimer Area -->
+        <hr>
+        <div class="content-area disclaimer-area">
+            <p class="disclaimer-paragraph">This website was created as a Web-Development Exam. All copyright material used in this project is not being used commercially.</p>
+            <p class="disclaimer-paragraph">Creator: Serge Lorenz Villasica</p>
+            <p class="disclaimer-paragraph">All Rights Reserved: 2021</p>
+            <div class="icons">
+                <a href="https://www.linkedin.com/in/serge-lorenz-villasica/"><img src="img/linkedin.png"></a>
+                <a href="https://github.com/sergelorenz"><img src="img/github.png"></a>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA21ElFzRWEGwWVcZJqDdwACQyjPD3Z0k8&libraries=geometry&callback=initMap"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
