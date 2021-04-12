@@ -329,7 +329,7 @@ function renderDetailWindow(restaurantData){
         </tr>
         <tr>
             <td class="show-directions-td" id="${restaurantData.nameCode}">
-                <div><span style="font-weight: bold;">Get Directions<span></div>
+                <div><span style="font-weight: bold;">Get Directions</span></div>
             </td>
         </tr>
     </table>
